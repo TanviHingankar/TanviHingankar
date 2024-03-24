@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marquee with Important Message</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .marquee {
+        overflow: hidden;
+        white-space: nowrap;
+        background-color: #f7f7f7;
+        padding: 10px;
+    }
+
+    .marquee p {
+        display: inline-block;
+        text-decoration: solid;
+        font-size: 50px;
+        margin: 0;
+        padding-right: 100%; 
+        animation: marqueeAnimation 12s linear infinite;
+    }
+
+    @keyframes marqueeAnimation {
+        0% {
+            transform: translateX(100%);
+            color: red;
+        }
+        50% {
+            color: orange;
+        }
+        100% {
+            transform: translateX(-100%);
+            color: red;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="marquee">
+    <p>Hello All beautiful Ladies! Not for Mens.</p>
+</div>
+
+</body>
+</html>
